@@ -86,7 +86,7 @@ function Extract-PSScriptBlocks {
                     $rebuiltscripts.add([PSCustomObject]@{
                         ScriptBlockID = $prevScriptBlockId
                         ScriptBlockText = $strBlock
-                    })
+                    }) | out-null
             
                    # $rebuiltscripts.Add($strBlock)
                     $blocks.push($ScriptBlockText)
