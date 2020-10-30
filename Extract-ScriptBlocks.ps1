@@ -86,7 +86,6 @@ function Extract-PSScriptBlocks {
                         ScriptBlockText = $strBlock
                     }) | out-null
             
-                   # $rebuiltscripts.Add($strBlock)
                     $blocks.push($ScriptBlockText)
                     $strBlock = ''
                 }
