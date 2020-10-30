@@ -66,8 +66,6 @@ function Extract-PSScriptBlocks {
                 
                 }
             
-                #Write-Host "Numbers as they appear $MessageNumber of $MessageTotal ScriptID: $ScriptBlockId"
-            
                 if($ScriptBlockId -eq $prevScriptBlockId -or $i -eq 0){
 
                     $blocks.Push($ScriptBlockText)
@@ -95,7 +93,6 @@ function Extract-PSScriptBlocks {
             
                 $prevScriptBlockId = $ScriptBlockId
                 $i++
-                #if($i -eq 8){break}
             }
 
 
