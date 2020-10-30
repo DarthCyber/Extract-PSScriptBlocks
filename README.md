@@ -1,5 +1,6 @@
 # Extract-PSScriptBlocks
-Extracts scripts from powershell operational log
+Extracts scripts from powershell operational log.
+
 Use Import-module to install. Save file locally, then Import-Module %filepath%\Extract-PSScriptBlocks.ps1
 
     .Synopsis
